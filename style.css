@@ -1,0 +1,161 @@
+body{
+        background-image: url(color.jpg);
+    }
+
+/* ====================================================================================
+    1nd row
+    ==================================================================================== */
+.wrap{
+      display:grid;
+      grid-template-columns:30% 40%;
+      grid-auto-rows:minmax(100px, auto);
+      grid-gap:1em;
+      /* justify-items:stretch; */
+      /* align-items:stretch; */
+      margin-left: 30%;
+      margin-top: 7%;
+      
+    }
+
+    .box1{
+      background-color: #F5E1F7;
+      align-self:start;
+      height: 100%; 
+      border-radius: 8px;
+      grid-auto-rows:minmax(auto, auto);
+      width: 65%;
+      text-align: center;
+     
+      /* grid-column:1/3;
+      grid-row:1/3; */
+    }
+
+    .box2{
+      align-self:end;
+      background-color: #F5E1F7;
+      height: 85%;
+      border-radius: 8px;
+      grid-auto-rows:minmax(auto, auto);
+      text-align: left;
+      
+      /* grid-column:3;
+      grid-row:1/3; */
+    }
+
+    
+
+    /* ====================================================================================
+    2nd row
+    ==================================================================================== */
+
+    .wrapp{
+    display:grid;
+    grid-template-columns:3fr 3fr 1.7fr;
+    grid-auto-rows: minmax(100px, auto); 
+    margin-top: 4%; 
+    margin-bottom: 10%; 
+    }
+
+    .big_one{
+        background-color: #F5E1F7;
+        border-radius: 8px;
+        height: 100%;
+        
+    }
+  
+    /* ====================================================================================
+    common elements
+    ==================================================================================== */
+
+    .box1,
+    .box2,
+    .big_one{
+        padding:3% 3% 0% 3%;
+    }
+
+    .cookies1{
+        height: 50px;
+        width: auto;
+        margin-top: 15%;
+    }
+    .cookies2{
+        height: 50px;
+        width: auto;
+        /* margin-top: 15%; */
+    }
+    p{
+     font-size: 13px;
+     padding-bottom: 2%;
+    }
+    .box-inside-margine{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+
+  /* ====================================================================================
+   Button elements
+    ==================================================================================== */  
+
+    .myButton {
+	background-color:#ff5bb0;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:12px 42px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #c70067;
+}
+.myButton:hover {
+	background-color:#ef027d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* ====================================================================================
+   Media Queries
+    ==================================================================================== */  
+
+    @media only screen and (max-width:977px){
+
+  #fstbtn {
+	border-radius:28px;
+	font-size:14px;
+	padding:8px 12px;
+}
+.wrap{
+   grid-template-columns: 40% 60%;
+   margin-left: 2%;
+   
+}
+  }
+
+@media only screen and (max-width:420px){
+
+.wrap,
+.wrapp{
+    grid-template-columns: 100%; 
+}
+ #fstbtn {
+	border-radius:28px;
+	font-size:14px;
+	padding:8px 12px;
+}
+
+.box1{
+    width: 100%;
+}
+
+.box2,
+.big_one{
+    text-align: center;
+}
+
+}
+  
